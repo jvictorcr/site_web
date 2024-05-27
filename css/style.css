@@ -437,4 +437,6 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}.bg-custom {
+    background-color: #00B98E !important;
 }
