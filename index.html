@@ -7,30 +7,22 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
+    <link href="img/zion_home.ico" rel="icon">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
         rel="stylesheet">
-
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -57,9 +49,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
+                    <div class="navbar-nav ms-auto" id="navLinks">
                         <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="#servicos" class="nav-item nav-link">Serviços</a>
                         <a href="#sobre" class="nav-item nav-link">Sobre</a>
+                        <a href="#projetos" class="nav-item nav-link">Projetos</a>
                         <a href="#contato" class="nav-item nav-link">Contato</a>
                     </div>
                 </div>
@@ -107,15 +101,14 @@
             </div>
         </div>
         <!-- Header End -->
-
-
         <!-- Search Start -->
         <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container" id="contato">
+            <div class="container">
                 <div class="row g-2 align-items-center">
                     <div class="col d-flex justify-content-start contact-info" style="color: #E4E2DD;">
                         <i class="bi bi-envelope d-flex align-items-center">
-                            <a href="#" title="#" style="color: #E4E2DD; padding-left: 10px;"> admin@zionx.dev.br</a>
+                            <a href="mailto:admin@zionx.dev.br" title="Enviar email"
+                                style="color: #E4E2DD; padding-left: 10px;">admin@zionx.dev.br</a>
                         </i>
                     </div>
                     <div class="col d-flex justify-content-end social-links">
@@ -147,12 +140,11 @@
                     </div>
                 </div>
             </div>
+            <a type="hidden" id="servicos"></a>
         </div>
         <!-- Search End -->
-
-
         <!-- Category Start -->
-        <div class="container-xxl py-5" id="sobre">
+        <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Serviços</h1>
@@ -234,7 +226,7 @@
                                     </video>
                                 </div>
                                 <h6>Atendimento</h6>
-                                <span>Completo, exclusivo e personalizado.</span>
+                                <span id="sobre">Completo, exclusivo e personalizado.</span>
                             </div>
                         </a>
                     </div>
@@ -242,35 +234,35 @@
             </div>
         </div>
         <!-- Category End -->
-
-
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                            <img class="img-fluid w-100" src="img/zion_img_13.png">
+                            <img class="img-fluid w-100" src="img/zion_img_16.png">
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="mb-4">#<b style="color:#00B98E ;">ZIONX</b> é um conceito</h1>
-                        <p class="mb-4"> A Zion, foi pensada para você. Sua empresa merece um site Online de baixo custo
+                        <p class="mb-4"> A zionx, foi pensada para você. Sua empresa merece um site On-line de baixo
+                            custo
                             e fácil manutenção.</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Orçamento ajustável</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Fácil acesso</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Baixo custo</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Equipe qualificada</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Trabalhamos com consultoria</p>
                         <a onclick="sendMessage()" title="Acessar WhatsApp" class="btn btn-primary py-3 px-5 mt-3"
                             href="">Fale conosco</a>
                     </div>
                 </div>
             </div>
+            <a type="hidden" id="projetos"></a>
         </div>
         <!-- About End -->
-
-
         <!-- Property List Start -->
-        <div class="container-xxl py-5" id="tab">
+        <div class="container-xxl py-5">
             <div class="container">
                 <ul class="nav nav-pills mb-3 justify-content-center">
                     <li class="nav-item">
@@ -456,7 +448,7 @@
                             <div id="fazendo" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div class="property-item rounded overflow-hidden">
                                     <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/ponto_img.png" alt=""></a>
+                                        <a href=""><img class="img-fluid" src="img/ponto_img_web.png" alt=""></a>
                                         <div
                                             class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
                                             Em fase de desenvolvimento</div>
@@ -511,8 +503,8 @@
                                             <span class="icon-info" data-icon="database">Banco de Dados</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-user fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="user">Ctr/Usuários</span>
+                                            <i class="fa fa-chart-bar fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="dashboard">Painel Demonstrativo</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
                                             <i class="fa fa-file-alt fa-lg icon" style="color:#00B98E;"></i><br>
@@ -543,8 +535,8 @@
                                             <span class="icon-info" data-icon="database">Banco de Dados</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-user fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="user">Ctr/Usuários</span>
+                                            <i class="fa fa-users fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="users">Ctr/Usuários</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
                                             <i class="fa fa-file-alt fa-lg icon" style="color:#00B98E;"></i><br>
@@ -576,11 +568,11 @@
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
                                             <i class="fa fa-user fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="user">Ctr/Acesso</span>
+                                            <span class="icon-info" data-icon="user">Ctr/Acessos</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-file-alt fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="file">Buscas avançada</span>
+                                            <i class="fa fa-search fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="search">Buscas Avançadas</span>
                                         </div>
                                     </div>
                                 </div>
@@ -611,12 +603,12 @@
                                             <span class="icon-info" data-icon="database">Banco de Dados</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-user fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="user">Ctr/Usuários</span>
+                                            <i class="fa fa-cogs fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="cogs">Ctr/Total</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-file-alt fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="file">Relatórios</span>
+                                            <i class="fa fa-trophy fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="trophy">Criação de Competições</span>
                                         </div>
                                     </div>
                                 </div>
@@ -646,12 +638,12 @@
                                             <span class="icon-info" data-icon="database">Banco de Dados</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-user fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="user">Ctr/Usuários</span>
+                                            <i class="fa fa-warehouse fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="warehouse">Ctr/De estoque</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-file-alt fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="file">Relatórios</span>
+                                            <i class="fa fa-shopping-cart fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="shopping-cart">Vendas</span>
                                         </div>
                                     </div>
                                 </div>
@@ -678,12 +670,12 @@
                                             <span class="icon-info" data-icon="database">Banco de Dados</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-user fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="user">Ctr/Usuários</span>
+                                            <i class="fa fa-users fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="users">Ctr/Usuários</span>
                                         </div>
                                         <div class="flex-fill text-center py-2 icon-container">
-                                            <i class="fa fa-file-alt fa-lg icon" style="color:#00B98E;"></i><br>
-                                            <span class="icon-info" data-icon="file">Relatórios</span>
+                                            <i class="fa fa-shield-alt fa-lg icon" style="color:#00B98E;"></i><br>
+                                            <span class="icon-info" data-icon="shield-alt">Ampla segurança</span>
                                         </div>
                                     </div>
                                 </div>
@@ -694,7 +686,8 @@
             </div>
             <!-- Property List End -->
             <!-- Footer Start -->
-            <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s"
+                id="contato">
                 <div class="container py-5">
                     <div class="row g-5">
                         <div class="col-lg-3 col-md-6">
@@ -715,11 +708,9 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-4">Links Rápidos</h5>
-                            <a class="btn btn-link text-white-50" href="#">Home</a>
-                            <a class="btn btn-link text-white-50" href="#contato">Contato</a>
-                            <a class="btn btn-link text-white-50" href="#sobre">Sobre</a>
-                            <a class="btn btn-link text-white-50" href="#tab">Conheça nossos projetos</a>
+                            <h5 class="text-white mb-4">Parceiros</h5>
+                            <a class="btn btn-link text-white-50" target="_blank" href="https://bitwise.dev.br/site/">BITWISE TECHNOLOGIES</a>
+                            <a class="btn btn-link text-white-50" target="_blank" href="https://codebrew.dev.br/site/manutencao.php">CODEBREW</a>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <h5 class="text-white mb-4">Projetos</h5>
@@ -740,13 +731,12 @@
                                     <img class="img-fluid rounded bg-custom p-1" src="img/laravel_img.jpg" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img class="img-fluid rounded bg-custom p-1" src="img/ponto_img.png" alt="">
+                                    <img class="img-fluid rounded bg-custom p-1" src="img/ponto_img_web.png" alt="">
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-4">Email - Corporativo</h5>
+                            <h5 class="text-white mb-4">Email Corporativo</h5>
                             <div class="position-relative mx-auto" style="max-width: 400px;">
                                 <a>admin@zionx.dev.br</a>
                             </div>
@@ -762,7 +752,9 @@
                             <div class="col-md-6 text-center text-md-end">
                                 <div class="footer-menu">
                                     <a href="#">Home</a>
+                                    <a href="#servicos">Serviços</a>
                                     <a href="#sobre">Sobre</a>
+                                    <a href="#projetos">Projetos</a>
                                     <a href="#contato">Contato</a>
                                 </div>
                             </div>
@@ -774,7 +766,6 @@
             <!-- Back to Top -->
             <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         </div>
-
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -784,47 +775,10 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-
-        <!-- Watts-->
-        <script>
-            function sendMessage() {
-                // Número de telefone para enviar a mensagem (substitua pelo seu número)
-                var phoneNumber = "SEU-NÚMERO-DE-TELEFONE-AQUI";
-
-                // Mensagem a ser enviada
-                var message = "Olá, gostaria de entrar em contato.";
-
-                // Construa a URL do WhatsApp com o número e a mensagem
-                var whatsappUrl = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
-
-                // Abrir a URL em uma nova janela
-                window.open(whatsappUrl, '_blank');
-            }
-        </script>
-        <script>
-            function showInfo(icon) {
-                document.querySelectorAll('.icon-info[data-icon="' + icon + '"]').forEach(function (span) {
-                    span.style.display = 'block';
-                });
-            }
-
-            function hideInfo(icon) {
-                document.querySelectorAll('.icon-info[data-icon="' + icon + '"]').forEach(function (span) {
-                    span.style.display = 'none';
-                });
-            }
-        </script>
-
-
-
-
-
-
-
-
+        <!--Meu js-->
+        <script src="js/control.js"></script>
 </body>
 
 </html>
