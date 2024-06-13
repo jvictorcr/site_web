@@ -200,7 +200,7 @@
 
       <div class="container-xxl py-5">
         <div class="container">
-          <ul class="nav nav-pills mb-3 justify-content-center">
+          <ul class="nav nav-pills mb-3 justify-content-center flex-column flex-sm-row" style="text-align: center;">
             <li class="nav-item">
               <a class="nav-link active rounded-pill" id="tab-1-tab" data-bs-toggle="pill" href="#tab-1">Todos</a>
             </li>
@@ -208,11 +208,9 @@
               <a class="nav-link rounded-pill" id="tab-2-tab" data-bs-toggle="pill" href="#tab-2">Implementados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link rounded-pill" id="tab-3-tab" data-bs-toggle="pill" href="#tab-3">Em
-                desenvolvimento</a>
+              <a class="nav-link rounded-pill" id="tab-3-tab" data-bs-toggle="pill" href="#tab-3">Em desenvolvimento</a>
             </li>
           </ul>
-
           <div class="tab-content">
             <div id="tab-1" class="tab-pane fade show active p-0">
               <div class="row g-4">
@@ -603,13 +601,13 @@
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title text-center"> <!-- Adicionado 'text-center' para centralizar o título e a descrição -->
           <h2>Equipe</h2>
           <p>Conheça nossa equipe dedicada, comprometida em fornecer soluções web personalizadas e de alta qualidade para sua empresa.</p>
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-12 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 col-12"> <!-- Adicionado 'col-md-6 col-12' para controle responsivo -->
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img img-small">
                 <img src="assets/img/team/IMG_4937.jpg" class="img-fluid" alt="João Victor Carvalho">
@@ -630,7 +628,6 @@
 
       </div>
     </section>
-
 
     <!-- End Team Section -->
 
