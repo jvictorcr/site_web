@@ -13,21 +13,23 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+
 .img-small img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  max-height: 300px; /* Adjust this value as needed */
+  max-height: 300px;
+  /* Adjust this value as needed */
 }
 
 a {
-  color: 	#C0C0C0	;
+  color: #C0C0C0;
   text-decoration: none;
 }
 
 a:hover {
-  color: 	#C0C0C0	;
+  color: #C0C0C0;
   text-decoration: none;
 }
 
@@ -59,7 +61,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid 	#C0C0C0	;
+  border: 6px solid #C0C0C0;
   border-top-color: #ecf8f9;
   border-radius: 50%;
   width: 60px;
@@ -87,7 +89,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: 	#C0C0C0	;
+  background: #C0C0C0;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -102,15 +104,15 @@ h6 {
 
 .back-to-top i:hover {
   font-size: 28px;
-  color: 	#C0C0C0	;
+  color: #C0C0C0;
   line-height: 0;
 }
 
 .back-to-top:hover {
   transition: 0.5s;
   background: transparent;
-  color: 	#C0C0C0	;
-  border: 1px solid #000	;
+  color: #C0C0C0;
+  border: 1px solid #000;
 }
 
 .back-to-top.active {
@@ -131,7 +133,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: 	#C0C0C0	;
+  background: #C0C0C0;
   color: #fff;
   height: 40px;
   font-size: 16px;
@@ -194,7 +196,7 @@ h6 {
 */
 .appointment-btn {
   margin-left: 25px;
-  background: 	#C0C0C0	;
+  background: #C0C0C0;
   color: #fff;
   border-radius: 4px;
   padding: 8px 25px;
@@ -205,7 +207,7 @@ h6 {
 }
 
 .appointment-btn:hover {
-  background: 	#495057	 !important;
+  background: #495057 !important;
   color: #fff;
 }
 
@@ -265,7 +267,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: 	#C0C0C0	;
+  color: #C0C0C0;
 }
 
 .navbar .dropdown ul {
@@ -479,8 +481,9 @@ h6 {
 
 @media (max-width: 1200px) {
   #hero .container {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -542,7 +545,7 @@ h6 {
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: #C0C0C0;
+  background: none;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -587,14 +590,48 @@ h6 {
     height: 100vh;
   }
 
+  #hero p {
+    margin-bottom: 0px;
+  }
+
+  #hero h2 {
+    margin-bottom: 0px;
+  }
+
   #hero .container {
     margin-top: 100px;
+    margin-bottom: 65px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  #hero .carousel-control-next-icon,
+  #hero .carousel-control-prev-icon {
+    background-image: none;
+    /* Remove a imagem de fundo */
+    background-color: transparent;
+    /* Torna o fundo transparente */
+    color: transparent;
+  }
+
+  #hero .btn-get-started {
+    margin-top: 5px;
   }
 }
 
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 28px;
+  }
+
+  #hero,
+  #hero .carousel,
+  #hero .carousel-inner,
+  #hero .carousel-item,
+  #hero .carousel-item::before {
+    position: relative;
+    width: 390px;
+    height: 550px;
   }
 }
 
@@ -603,7 +640,12 @@ h6 {
   #hero .carousel-control-prev,
   #hero .carousel-control-next {
     width: 5%;
+    background-image: none;
+    /* Remove a imagem de fundo */
+    background-color: transparent;
+    /* Torna o fundo transparente */
   }
+
 }
 
 @media (max-height: 500px) {
@@ -1090,6 +1132,7 @@ section {
 .departments .nav-tabs {
   border: 0;
 }
+
 .nav-pills .nav-link {
   color: #000;
   border-radius: 0;
@@ -1103,7 +1146,9 @@ section {
   border-radius: 0;
   cursor: pointer;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
   color: var(--bs-nav-pills-link-active-color);
   background-color: #C0C0C0;
 }
@@ -1389,8 +1434,11 @@ section {
   padding: 20px;
   background: #fff;
   text-align: center;
-  background-color: #c0c0c0; /* Fundo cinza */
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12); /* Sombra suave */  border-radius: 4px;
+  background-color: #c0c0c0;
+  /* Fundo cinza */
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  /* Sombra suave */
+  border-radius: 4px;
   position: relative;
   overflow: hidden;
 }

@@ -39,8 +39,8 @@
           <i class="bi bi-envelope"></i>
         </a></i> Email - admin@zionx.dev.br
       </div>
-      <div class="d-flex align-items-center" style="color: #495057;">
-        <i class="fab fa-whatsapp" target="_blank" title="Acessar WhatsApp" onclick="sendMessage()"></i> WhatsApp - (54) 99926-0755
+      <div class="d-flex align-items-center" style="color: #495057;" target="_blank" title="Acessar WhatsApp" onclick="sendMessage()">
+        <i class="fab fa-whatsapp"></i> WhatsApp - (54) 99926-0755
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url('assets/img/projects/img/zion_img_3.jpg')">
+        <div class="carousel-item active" style="background-image: url('assets/img/projects/img/zion_img_4_edit.jpg')">
           <div class="container">
             <h2>Bem-vindo à ZIONX</h2>
             <p>Especialistas em criar soluções web personalizadas para destacar sua empresa online. Descubra como podemos ajudar a transformar sua presença digital.</p>
@@ -84,16 +84,16 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url('assets/img/projects/img/zion_img_4.jpg')">
+        <div class="carousel-item" style="background-image: url('assets/img/projects/img/zion_img_3_edit.jpg')">
           <div class="container">
             <h2>Páginas One-Page</h2>
             <p>Desenvolvemos páginas de uma só página que são rápidas, intuitivas e visualmente atraentes. Ideal para apresentar informações de forma concisa e impactante.</p>
-            <a href="#projects" class="btn-get-started scrollto">Saiba Mais</a>
+            <a href="#about" class="btn-get-started scrollto">Saiba Mais</a>
           </div>
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url('assets/img/projects/img/zion_img_5.jpg')">
+        <div class="carousel-item" style="background-image: url('assets/img/projects/img/zion_img_3.jpg')">
           <div class="container">
             <h2>Páginas de Propaganda</h2>
             <p>Crie campanhas de marketing poderosas com nossas páginas de propaganda otimizadas. Aumente a conversão e alcance seu público-alvo com eficácia.</p>
@@ -659,14 +659,15 @@
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
+                  <a href="mailto:admin@zionx.dev.br" title="Enviar email"> <i class="bx bx-envelope"></i>
+                  </a>
                   <h3>Email</h3>
                   <p>admin@zionx.dev.br<br>jvictorcrs2@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
+                  <i class="bx bx-phone-call" target="_blank" title="Acessar WhatsApp" onclick="sendMessage()"></i>
                   <h3>Celular</h3>
                   <p>+55 (54) 99926-0755</p>
                   <br>
@@ -686,9 +687,9 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span><a href="https://zionx.dev.br" target="_blank" style="color: #495057;">ZIONX</a></span></strong>. Todos os direitos
+        &copy; Copyright <strong><span><a href="https://zionx.dev.br" target="_blank" style="color: #495057;"> ZIONX</a></span></strong>. Todos os direitos
         reservados
-        <i class="bi bi-info-circle" style="padding-left: 10px;"> Versão 1.2</i>
+        <i class="bi bi-info-circle" style="padding-left: 27px;"> Versão 1.2</i>
       </div>
     </div>
   </footer><!-- End Footer -->
